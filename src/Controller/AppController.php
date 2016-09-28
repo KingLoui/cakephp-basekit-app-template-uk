@@ -27,6 +27,7 @@ class AppController extends Controller
     {
         parent::initialize();
 
+        $this->loadComponent('KingLoui/BaseKit.BaseKit');
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
@@ -88,19 +89,6 @@ class AppController extends Controller
             else 
                 $this->redirect(array('controller' => 'pages', 'action' => 'display', 'dashboard'));
         }
-    }
-
-    public function beforeRender(Event $event)
-    {
-        if (!array_key_exists('_serialize', $this->viewVars) &&
-            in_array($this->response->type(), ['application/json', 'application/xml'])
-        ) {
-            $this->set('_serialize', true);
-        }
-
-        if (isset($this->request->params['prefix']) && $this->request->params['prefix'] == 'admin') {
-            $this->viewBuilder()->layout('admin');
-        } 
     }
 
     public function isAuthorized($user)

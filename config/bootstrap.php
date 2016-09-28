@@ -188,3 +188,5 @@ if (Configure::read('debug')) {
 }
 
 Plugin::load('Migrations');
+Plugin::load('KingLoui/BaseKit', ['bootstrap' => true, 'routes' => true]);
+Configure::load('basekit');

@@ -26,12 +26,9 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
+    <div class="paginator text-center">
+        <ul class="pagination btn-group">
+            <?= $this->Paginator->numbers(['prev' => true, 'next' => true]) ?>
         </ul>
-        <p><?= $this->Paginator->counter() ?></p>
     </div>
 </div>
