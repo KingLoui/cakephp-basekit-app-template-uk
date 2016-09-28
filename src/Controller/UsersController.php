@@ -48,7 +48,7 @@ class UsersController extends AppController
                     {
                         $this->Auth->setUser($user);
                         if($user['role'] == 'admin')
-                            return $this->redirect(Router::url(['prefix' => 'admin', 'controller' => 'Pages', 'action' => 'display','dashboard']));
+                            return $this->redirect('/admin');
                         return $this->redirect($this->Auth->redirectUrl());
                     } else {
                         $this->Flash->error(__('Sie können sich nur mit ihrem Primäraccount anmelden.'));

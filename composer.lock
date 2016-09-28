@@ -612,12 +612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KingLoui/cakephp-basekit.git",
-                "reference": "f0c8af0fae77a48b2ac6969c98b4c31941805c4b"
+                "reference": "37f609a26e38a4b2b109a1fb1d8b8b2fc65aef32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KingLoui/cakephp-basekit/zipball/f0c8af0fae77a48b2ac6969c98b4c31941805c4b",
-                "reference": "f0c8af0fae77a48b2ac6969c98b4c31941805c4b",
+                "url": "https://api.github.com/repos/KingLoui/cakephp-basekit/zipball/37f609a26e38a4b2b109a1fb1d8b8b2fc65aef32",
+                "reference": "37f609a26e38a4b2b109a1fb1d8b8b2fc65aef32",
                 "shasum": ""
             },
             "require": {
@@ -639,7 +639,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "BaseKit plugin for CakePHP",
-            "time": "2016-09-28 10:30:17"
+            "time": "2016-09-28 10:53:36"
         },
         {
             "name": "knplabs/gaufrette",

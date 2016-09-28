@@ -56,16 +56,13 @@ class AppController extends Controller
                 'controller' => 'users',
                 'action' => 'login'
             ],
-            // 'unauthorizedRedirect' => [
-            //     'controller' => 'pages',
-            //     'action' => 'home',
-            //     'prefix' => false
-            // ],
             'unauthorizedRedirect' => false,
             'loginRedirect' => [
+                'prefix' => false,
+                'plugin' => false,
                 'controller' => 'pages',
-                'action' => 'dashboard',
-                'prefix' => false
+                'action' => 'dashboard'
+                
             ],
             'logoutRedirect' => [
                 'controller' => 'pages',
@@ -80,14 +77,17 @@ class AppController extends Controller
     {
         $this->set('user', $this->Auth->user());
 
+        // linke startseite auf admin dashboard bzw userdashboard
         if($this->Auth->user() 
             && $this->request->params['controller'] == 'Pages' 
             && $this->request->params['pass'][0] == 'home') 
         { 
-            if($this->Auth->user('role') == 'admin')
-                $this->redirect(array('prefix' => 'admin', 'controller' => 'pages', 'action' => 'display', 'dashboard'));
-            else 
-                $this->redirect(array('controller' => 'pages', 'action' => 'display', 'dashboard'));
+            if($this->Auth->user('role') == 'admin'){
+                $this->redirect('/admin');
+            }
+            else {
+                $this->redirect('/dashboard');
+            }
         }
     }
 

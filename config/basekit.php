@@ -11,16 +11,16 @@ $config = [
         'ShowThemeExamples' => false,
         'ShowThemeSettings' => false,
         'MenuItems' => [
-           'Users' => ['uri' => ['controller' => 'Users', 'action' => 'index'], 'extras' => ['icon' => 'fa fa-user']],
+           'Users' => ['uri' => ['plugin' => false, 'controller' => 'Users', 'action' => 'index'], 'extras' => ['icon' => 'fa fa-user']],
            'Accounts' => [['uri' => '#', 'extras' => ['icon' => 'fa fa-database']],
-              'All Accounts' => ['uri' => ['controller' => 'Accounts', 'action' => 'index']],
-              'Add Account' => ['uri' => ['controller' => 'Accounts', 'action' => 'add']]
+              'All Accounts' => ['uri' => ['plugin' => false, 'controller' => 'Accounts', 'action' => 'index']],
+              'Add Account' => ['uri' => ['plugin' => false, 'controller' => 'Accounts', 'action' => 'add']]
            ],
            'Bookings' => [['uri' => '#', 'extras' => ['icon' => 'fa fa-book']],
-              'All Bookings' => ['uri' => ['controller' => 'Bookings', 'action' => 'index']],
-              'Expired Bookings' => ['uri' => ['controller' => 'Bookings', 'action' => 'expired']]
+              'All Bookings' => ['uri' => ['plugin' => false, 'controller' => 'Bookings', 'action' => 'index']],
+              'Expired Bookings' => ['uri' => ['plugin' => false, 'controller' => 'Bookings', 'action' => 'expired']]
            ],
-           'Reservations' => ['uri' => ['controller' => 'Reservations', 'action' => 'index'], 'extras' => ['icon' => 'fa fa-list-ol']]
+           'Reservations' => ['uri' => ['plugin' => false, 'controller' => 'Reservations', 'action' => 'index'], 'extras' => ['icon' => 'fa fa-list-ol']]
         ]
       ]
   ]
