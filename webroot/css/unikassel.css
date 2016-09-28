@@ -1,0 +1,139 @@
+html, 
+body {
+	margin:0;
+	padding:0;
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	background: white;
+	color: #222;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.container {
+	width: 666px;
+	margin: 0 auto;
+	background: #eee;
+	min-height: 100%;
+	position: relative;
+}
+
+header {
+	height: 175px;
+	background: white;
+	position: relative;
+}
+
+header .user {
+	padding:0 0 5px 0;
+	text-align: right;
+	position: absolute;
+	right:0px;
+	bottom: 0px;
+}
+header .user .logout {
+	display: inline-block;
+	margin: 5px 0 5px 10px;
+	padding: 5px 10px;
+	background: #c1005d;
+	color: white;
+	text-decoration: none;
+	font-size: 90%;
+	border: 0;
+}
+
+header .logo {
+	height: 60px;
+	width: auto;
+	position: relative;
+	top:50%;
+	margin-top: -30px;
+}
+
+section.content {
+	padding:20px 20px 0 20px;
+	padding-bottom: 165px;
+}
+
+footer {
+	padding: 10px 0;
+	width: 100%;
+	font-size: 80%;
+	background: #fff;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+}
+
+fieldset {
+	border: 1px solid #c1005d;
+	margin: 0;
+	padding: 10px 10px;
+}
+
+fieldset {
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+legend {
+	font-weight: bold;
+}
+
+label {
+	display: block;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input[type="text"],
+input[type="password"] 
+{
+	margin: 5px 0;
+	padding: 5px 5px;
+	min-height: 20px;
+	width: 100%;
+	border: 0;
+	border: 1px solid #ccc;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box; 	
+}
+
+a.button,
+button {
+	display: inline-block;
+	margin: 5px 0;
+	padding: 10px 20px;
+	background: #c1005d;
+	color: white;
+	text-decoration: none;
+	font-size: 90%;
+	border: 0;
+}
+
+a {
+	color: #c1005d;
+	text-decoration: none;
+}
+.message {
+	text-align: center;
+	padding:10px;
+}
+.message.error {
+	background: #f00;
+}
+.message.success {
+	background: #228B22;
+}
