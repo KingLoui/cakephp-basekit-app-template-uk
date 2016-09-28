@@ -9,8 +9,10 @@ return [
      * Development Mode:
      * true: Errors and warnings shown.
      */
-    'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
-
+    'debug' => false,
+    //'debug' => filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN),
+    
+    //'debug' => false,
     /**
      * Configure basic information about the application.
      *
@@ -39,7 +41,7 @@ return [
     'App' => [
         'namespace' => 'App',
         'encoding' => env('APP_ENCODING', 'UTF-8'),
-        'defaultLocale' => env('APP_DEFAULT_LOCALE', 'en_US'),
+        'defaultLocale' => env('APP_DEFAULT_LOCALE', 'de_DE'),
         'base' => false,
         'dir' => 'src',
         'webroot' => 'webroot',
@@ -64,7 +66,7 @@ return [
      *   You should treat it as extremely sensitive data.
      */
     'Security' => [
-        'salt' => env('SECURITY_SALT', '__SALT__'),
+        'salt' => env('SECURITY_SALT', '57b20da7a220cb9b1fc3a45d4acc86ac6cf826a5ea33d74e4b0db76456d93e2d'),
     ],
 
     /**
@@ -177,7 +179,7 @@ return [
      * 'YourTransport.php', where 'Your' is the name of the transport.
      */
     'EmailTransport' => [
-        'default' => [
+        'tmp' => [
             'className' => 'Mail',
             // The following keys are used in SMTP transports
             'host' => 'localhost',
@@ -188,6 +190,11 @@ return [
             'client' => null,
             'tls' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+        ],
+        'default' => [
+            'className' => 'Mail',
+            // The following keys are used in SMTP transports
+
         ],
     ],
 
@@ -222,16 +229,12 @@ return [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
-            'host' => 'localhost',
-            /**
-             * CakePHP will use the default DB port based on the driver selected
-             * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
-             * the following line and set the port accordingly
-             */
-            //'port' => 'non_standard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'my_app',
+
+            'host' => 'mysql-db4.uni-kassel.de',
+            'username' => 'uk049807',
+            'password' => 'Xzc1JryUbyoq',
+            'database' => 'db4_vt_1',
+
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'flags' => [],
@@ -342,5 +345,45 @@ return [
      */
     'Session' => [
         'defaults' => 'php',
+    ],
+    
+    /**
+     * LDAP Configuration.
+     *
+     * Contains an array of settings to use for the LDAP configuration.
+     *
+     * ## Options
+     *
+     * - `domain` - The domain name to match against or auto complete so user isn't
+     *    required to enter full email address
+     * - `host` - The domain controller hostname. This can be a closure or a string.
+     *    The closure allows you to modify the rules in the configuration without the
+     *    need to modify the LDAP plugin. One host (string) should be returned when
+     *    using closure.
+     * - `baseDN` - The base DN for directory - Closure must be used here, the plugin
+     *    is expecting a closure object to be set.
+     * - `search` - The attribute to search against. Usually 'UserPrincipalName'
+     * - `port` - The port to use. Default is 389 and is not required.
+     * - `errors` - Array of errors where key is the error and the value is the error
+     *    message. Set in session to Flash.ldap for flashing
+     *
+     * @link http://php.net/manual/en/function.ldap-search.php - for more info on ldap search
+     */
+    'Ldap' => [
+        'host' => 'ldap.its.uni-kassel.de',
+        'port' => 389,
+        'search' => 'uid',
+        'baseDN' => function($username, $domain) {
+            $baseDN = "cn=".$username.", ou=active, ou=users, o=unikassel";
+            return $baseDN;
+        },
+        'bindDN' => function($username, $domain) {
+            $bindDN = "cn=".$username.", ou=active, ou=users, o=unikassel";
+            return $bindDN;
+        },
+        'errors' => [
+            'data 773' => 'Some error for Flash',
+            'data 532' => 'Some error for Flash',
+        ]
     ],
 ];

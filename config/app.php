@@ -232,10 +232,6 @@ return [
             'username' => 'root',
             'password' => 'root',
             'database' => 'lynda',
-            // 'host' => 'mysql-db4.uni-kassel.de',
-            // 'username' => 'uk049807',
-            // 'password' => 'Xzc1JryUbyoq',
-            // 'database' => 'db4_vt_1',
 
             'encoding' => 'utf8',
             'timezone' => 'UTC',

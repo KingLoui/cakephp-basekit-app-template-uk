@@ -12,7 +12,6 @@
                             <th><?= $this->Paginator->sort('email') ?></th>
                             <th><?= $this->Paginator->sort('role') ?></th>
                             <th><?= $this->Paginator->sort('created') ?></th>
-                            <th><?= $this->Paginator->sort('modified') ?></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -24,7 +23,6 @@
                             <td><?= h($user->email) ?></td>
                             <td><?= h($user->role) ?></td>
                             <td><?= h($user->created) ?></td>
-                            <td><?= h($user->modified) ?></td>
                             <td class="actions dropdown">
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-cog"></i></a>
                                 <ul class="dropdown-menu dropdown-menu-right animated fadeInRight m-t-xs">
