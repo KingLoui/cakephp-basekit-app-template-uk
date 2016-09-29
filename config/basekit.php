@@ -15,7 +15,6 @@ $config = [
               'All Users' => ['uri' => ['plugin' => false, 'controller' => 'Users', 'action' => 'index']],
               'Add User' => ['uri' => ['plugin' => false, 'controller' => 'Users', 'action' => 'add']]
            ],
-
            'Accounts' => [['uri' => '#', 'extras' => ['icon' => 'fa fa-database']],
               'All Accounts' => ['uri' => ['plugin' => false, 'controller' => 'Accounts', 'action' => 'index']],
               'Add Account' => ['uri' => ['plugin' => false, 'controller' => 'Accounts', 'action' => 'add']]
