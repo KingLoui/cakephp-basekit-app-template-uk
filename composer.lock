@@ -713,12 +713,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KingLoui/cakephp-basekit-ukusers.git",
-                "reference": "975a9a0a2959f91d781d351f29650e915db6ac77"
+                "reference": "40350d80acdb37c39ff8461aeef574ad5a58aa35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KingLoui/cakephp-basekit-ukusers/zipball/975a9a0a2959f91d781d351f29650e915db6ac77",
-                "reference": "975a9a0a2959f91d781d351f29650e915db6ac77",
+                "url": "https://api.github.com/repos/KingLoui/cakephp-basekit-ukusers/zipball/40350d80acdb37c39ff8461aeef574ad5a58aa35",
+                "reference": "40350d80acdb37c39ff8461aeef574ad5a58aa35",
                 "shasum": ""
             },
             "require": {
@@ -738,7 +738,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Uni Kassel users plugin for BaseKit",
-            "time": "2016-10-04 08:55:22"
+            "time": "2016-10-04 11:43:23"
         },
         {
             "name": "kingloui/cakephp-basekit-users",
