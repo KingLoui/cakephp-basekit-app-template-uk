@@ -189,4 +189,9 @@ if (Configure::read('debug')) {
 
 Plugin::load('Migrations');
 Plugin::load('KingLoui/BaseKit', ['bootstrap' => true, 'routes' => true]);
+
+Configure::load('ldap');
+Plugin::load('KingLoui/BaseKitUkUsers', ['bootstrap' => true, 'routes' => false]);
+
 Configure::load('basekit');
+

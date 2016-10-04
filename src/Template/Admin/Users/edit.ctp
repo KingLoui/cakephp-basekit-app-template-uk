@@ -17,6 +17,9 @@
                 ]]) ?>
                 <?php
                     echo $this->Form->input('role', ['options' => ['user' => 'User','admin' => 'Admin']]);
+                    echo $this->Form->input('active', ['type' => 'checkbox']);
+                    echo $this->Form->input('is_superuser', ['type' => 'checkbox']);
+
                 ?>
                 <div class="hr-line-dashed"></div>
                 <div class="form-group">

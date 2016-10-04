@@ -4,20 +4,15 @@
     "homepage": "http://cakephp.org",
     "type": "project",
     "license": "MIT",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/KingLoui/LDAP"
-        }
-    ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.9",
-        "cakephp/cakephp": "3.3.*",
+        "cakephp/cakephp": "3.3.4",
         "mobiledetect/mobiledetectlib": "2.*",
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*",
-        "queencitycodefactory/ldap": "dev-master",
-        "kingloui/cakephp-basekit": "dev-master"
+        "kingloui/cakephp-basekit": "dev-master",
+        "kingloui/cakephp-basekit-ukusers": "dev-master"
     },
     "require-dev": {
         "psy/psysh": "@stable",
@@ -45,6 +40,5 @@
         "post-create-project-cmd": "App\\Console\\Installer::postInstall",
         "post-autoload-dump": "Cake\\Composer\\Installer\\PluginInstaller::postAutoloadDump"
     },
-    "minimum-stability": "beta",
     "prefer-stable": true
 }

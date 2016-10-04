@@ -1,5 +1,5 @@
 <?php
-// src/Model/Entity/User.php
+
 namespace App\Model\Entity;
 
 use Cake\Auth\DefaultPasswordHasher;

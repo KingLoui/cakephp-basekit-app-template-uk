@@ -16,8 +16,9 @@
                     ]
                 ]]) ?>
                 <?php
-                    echo $this->Form->input('uniaccount');
+                    echo $this->Form->input('username', ['label' => 'Uniaccount']);
                     echo $this->Form->input('role', ['options' => ['user' => 'User','admin' => 'Admin']]);
+                    echo $this->Form->input('active', ['type' => 'checkbox']);
                 ?>
                 <div class="hr-line-dashed"></div>
                 <div class="form-group">
