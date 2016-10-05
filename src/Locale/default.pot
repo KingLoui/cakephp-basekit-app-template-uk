@@ -1,0 +1,138 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2016-10-05 14:39+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Element/adminbar.ctp:9
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Layout/default.ctp:28
+msgid "Logout"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Pages/dashboard.ctp:1
+msgid "Dashboard"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/add.ctp:1
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//basekit.php:14
+msgid "Add user"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/add.ctp:19
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/index.ctp:9
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:9
+msgid "Uniaccount"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/add.ctp:25
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/edit.ctp:26
+msgid "Save"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/edit.ctp:1
+msgid "Edit user"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/index.ctp:1
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//basekit.php:13
+msgid "All users"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/index.ctp:29
+msgid "View"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/index.ctp:30
+msgid "Edit"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/index.ctp:31
+msgid "Delete"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/index.ctp:31
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:1
+msgid "Userdetails"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:13
+msgid "First Name"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:17
+msgid "Last Name"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:21
+msgid "Email"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:25
+msgid "Role"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:29
+msgid "Active"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:33
+msgid "Superuser"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:37
+msgid "Id"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:41
+msgid "Created"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Admin/Users/view.ctp:45
+msgid "Modified"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Element/login.ctp:11;23
+msgid "Login"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Element/login.ctp:18
+msgid "Stay logged in"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Email/html/expiredbookings.ctp:30
+msgid "Show expired bookings"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//basekit.php:12
+msgid "Users"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//ldap.php:14
+msgid "You can only login with your primary account"
+msgstr ""
+
+#: /Users/matthiashollerbach/Synced/db_hiwi/proj_webdev/apptemplate_ukldap/app//ldap.php:16
+msgid "Only students and staff members can book accounts"
+msgstr ""
+

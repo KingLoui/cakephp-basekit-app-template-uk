@@ -9,9 +9,9 @@ $config = [
         'ShowThemeExamples' => false,
         'ShowThemeSettings' => false,
         'MenuItems' => [
-           'Users' => [['uri' => '/admin/users', 'extras' => ['icon' => 'fa fa-user']],
-              'All Users' => ['uri' => ['plugin' => false, 'controller' => 'Users', 'action' => 'index']],
-              'Add User' => ['uri' => ['plugin' => false, 'controller' => 'Users', 'action' => 'add']]
+           __('Users') => [['uri' => '/admin/users', 'extras' => ['icon' => 'fa fa-user']],
+              __('All users') => ['uri' => ['plugin' => false, 'controller' => 'Users', 'action' => 'index']],
+              __('Add user') => ['uri' => ['plugin' => false, 'controller' => 'Users', 'action' => 'add']]
            ]
         ]
       ]

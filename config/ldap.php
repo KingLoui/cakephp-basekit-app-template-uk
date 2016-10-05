@@ -11,9 +11,9 @@ return [
                     // authed
                     return true;
                 else
-                    $controller->Flash->error(__('Sie können sich nur mit ihrem Primäraccount anmelden.'));
+                    $controller->Flash->error(__('You can only login with your primary account'));
             } else
-                $controller->Flash->error(__('Nur Studenten und Mitarbeiter haben die Möglichkeit sich einen Account auszuleihen.'));
+                $controller->Flash->error(__('Only students and staff members can book accounts'));
         }
     ],
      /**

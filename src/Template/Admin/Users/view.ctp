@@ -1,4 +1,4 @@
-<?php $this->assign('title', 'Userdetails'); ?>
+<?php $this->assign('title', __('Userdetails')); ?>
 <div class="row">
     <div class="col-lg-12">
         <div class="ibox float-e-margins">
@@ -7,11 +7,15 @@
                 <table class="table">
                     <tr>
                         <th><?= __('Uniaccount') ?></th>
-                        <td><?= h($user->uniaccount) ?></td>
+                        <td><?= h($user->username) ?></td>
                     </tr>
                     <tr>
-                        <th><?= __('Name') ?></th>
-                        <td><?= h($user->realname) ?></td>
+                        <th><?= __('First Name') ?></th>
+                        <td><?= h($user->first_name) ?></td>
+                    </tr>
+                    <tr>
+                        <th><?= __('Last Name') ?></th>
+                        <td><?= h($user->last_name) ?></td>
                     </tr>
                     <tr>
                         <th><?= __('Email') ?></th>
@@ -20,6 +24,14 @@
                     <tr>
                         <th><?= __('Role') ?></th>
                         <td><?= h($user->role) ?></td>
+                    </tr>
+                    <tr>
+                        <th><?= __('Active') ?></th>
+                        <td><?= h($user->active) ?></td>
+                    </tr>
+                    <tr>
+                        <th><?= __('Superuser') ?></th>
+                        <td><?= h($user->is_superuser) ?></td>
                     </tr>
                     <tr>
                         <th><?= __('Id') ?></th>

@@ -678,12 +678,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KingLoui/cakephp-basekit.git",
-                "reference": "20c3aa67aa0a822859a06415867ed7ac4c48ada6"
+                "reference": "2612356809a4aeda96a988e0016ca46dc60404b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KingLoui/cakephp-basekit/zipball/20c3aa67aa0a822859a06415867ed7ac4c48ada6",
-                "reference": "20c3aa67aa0a822859a06415867ed7ac4c48ada6",
+                "url": "https://api.github.com/repos/KingLoui/cakephp-basekit/zipball/2612356809a4aeda96a988e0016ca46dc60404b6",
+                "reference": "2612356809a4aeda96a988e0016ca46dc60404b6",
                 "shasum": ""
             },
             "require": {
@@ -705,7 +705,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "BaseKit plugin for CakePHP",
-            "time": "2016-10-01 13:01:30"
+            "time": "2016-10-05 07:50:33"
         },
         {
             "name": "kingloui/cakephp-basekit-ukusers",
@@ -713,19 +713,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KingLoui/cakephp-basekit-ukusers.git",
-                "reference": "40350d80acdb37c39ff8461aeef574ad5a58aa35"
+                "reference": "fe0a5d39e583770d50533757978d3f5a53c36051"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KingLoui/cakephp-basekit-ukusers/zipball/40350d80acdb37c39ff8461aeef574ad5a58aa35",
-                "reference": "40350d80acdb37c39ff8461aeef574ad5a58aa35",
+                "url": "https://api.github.com/repos/KingLoui/cakephp-basekit-ukusers/zipball/fe0a5d39e583770d50533757978d3f5a53c36051",
+                "reference": "fe0a5d39e583770d50533757978d3f5a53c36051",
                 "shasum": ""
             },
             "require": {
                 "cakephp/cakephp": ">=3.3.2 <4.0.0",
                 "kingloui/cakephp-basekit-users": "dev-master",
-                "kingloui/cakephp-ldap": "dev-master",
-                "php": ">=5.5.9"
+                "php": ">=5.5.9",
+                "queencitycodefactory/ldap": "dev-master"
             },
             "require-dev": {
                 "phpunit/phpunit": "*"
@@ -738,7 +738,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Uni Kassel users plugin for BaseKit",
-            "time": "2016-10-04 11:43:23"
+            "time": "2016-10-04 14:32:07"
         },
         {
             "name": "kingloui/cakephp-basekit-users",
@@ -771,54 +771,6 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "CakeDC Users wrapper for BaseKit CakePHP Plugin",
             "time": "2016-10-01 13:00:15"
-        },
-        {
-            "name": "kingloui/cakephp-ldap",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/KingLoui/cakephp-ldap.git",
-                "reference": "75ea140ecfd125c1e337c7989d8313c98dd81b6d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/KingLoui/cakephp-ldap/zipball/75ea140ecfd125c1e337c7989d8313c98dd81b6d",
-                "reference": "75ea140ecfd125c1e337c7989d8313c98dd81b6d",
-                "shasum": ""
-            },
-            "require": {
-                "cakephp/cakephp": ">=3.2.0",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "cakephp/cakephp-codesniffer": "dev-master",
-                "phpunit/phpunit": "*"
-            },
-            "type": "cakephp-plugin",
-            "autoload": {
-                "psr-4": {
-                    "Ldap\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "darensipes",
-                    "homepage": "https://github.com/darensipes",
-                    "role": "Author"
-                }
-            ],
-            "description": "LDAP plugin for CakePHP 3.x",
-            "homepage": "http://github.com/QueenCityCodeFactory/LDAP",
-            "keywords": [
-                "authenticate",
-                "cakephp",
-                "ldap"
-            ],
-            "time": "2016-10-04 08:43:57"
         },
         {
             "name": "knplabs/gaufrette",
@@ -1111,6 +1063,54 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "queencitycodefactory/ldap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/QueenCityCodeFactory/LDAP.git",
+                "reference": "c37f4e3f27f4689e8d562a64705da09abd832a55"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/QueenCityCodeFactory/LDAP/zipball/c37f4e3f27f4689e8d562a64705da09abd832a55",
+                "reference": "c37f4e3f27f4689e8d562a64705da09abd832a55",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": ">=3.2.0",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "dev-master",
+                "phpunit/phpunit": "*"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Ldap\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "darensipes",
+                    "homepage": "https://github.com/darensipes",
+                    "role": "Author"
+                }
+            ],
+            "description": "LDAP plugin for CakePHP 3.x",
+            "homepage": "http://github.com/QueenCityCodeFactory/LDAP",
+            "keywords": [
+                "authenticate",
+                "cakephp",
+                "ldap"
+            ],
+            "time": "2016-10-04 14:26:54"
         },
         {
             "name": "robmorgan/phinx",

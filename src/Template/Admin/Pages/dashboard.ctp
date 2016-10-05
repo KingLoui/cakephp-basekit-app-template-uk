@@ -1,2 +1,2 @@
-<?php $this->assign('title', 'Dashboard'); ?>
+<?php $this->assign('title', __('Dashboard')); ?>
 <h2>Willkommen</h2>

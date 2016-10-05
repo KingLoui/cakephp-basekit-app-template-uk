@@ -1,0 +1,32 @@
+.btn.btn-default {
+	background: $color1;
+	border-color: $color1;
+	color:white;
+	&:hover {
+		background: $color1dark;
+		border-color: $color1dark;		
+	}
+}
+
+.nav-pills {
+	> li {
+		> a, 
+		> a:hover,
+		> a:focus {
+			color:black;					
+		}
+		&.active {
+			> a {
+				background: $color1;
+				border-color: $color1;				
+			}
+			> a:hover,
+			> a:focus {
+				background: $color1dark;
+				border-color: $color1dark;
+				color:white;					
+			}
+		}
+	}
+
+}

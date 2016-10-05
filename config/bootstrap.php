@@ -191,7 +191,10 @@ Plugin::load('Migrations');
 Plugin::load('KingLoui/BaseKit', ['bootstrap' => true, 'routes' => true]);
 
 Configure::load('ldap');
+Configure::load('users');
 Plugin::load('KingLoui/BaseKitUkUsers', ['bootstrap' => true, 'routes' => false]);
 
 Configure::load('basekit');
+
+Plugin::load('UniTheme');
 

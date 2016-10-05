@@ -231,7 +231,7 @@ return [
             'host' => 'localhost',
             'username' => 'root',
             'password' => 'root',
-            'database' => 'lynda',
+            'database' => 'uk_lynda',
 
             'encoding' => 'utf8',
             'timezone' => 'UTC',

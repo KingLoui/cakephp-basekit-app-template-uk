@@ -17,16 +17,31 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('KingLoui/BaseKit.BaseKit');
-
-        // Configure::write('Users.auth', false);
-        // $this->loadComponent('Auth', Configure::read('Auth'));
-
         $this->loadComponent('KingLoui/BaseKitUsers.BaseKitUsers');
 
     }
 
-    public function beforeFilter(Event $event)
+    public function beforeRender(Event $event)
     {
         //debug($this->Auth);
+        $menu = $this->Menu->get('menu_main');
+        $menu->addChild('Dashboard', ['uri' => '/pages/dashboard']);
+        $menu->addChild('Testseite', ['uri' => '/pages/test']);
+
+        $this->viewBuilder()->theme('UniTheme');
+        $this->viewBuilder()->helpers([
+            'Url', 
+            'Gourmet/KnpMenu.Menu',
+            'Html' => ['className' => 'BootstrapUI.Html'],
+            'Form' => ['className' => 'BootstrapUI.Form'],
+            'Flash' => ['className' => 'BootstrapUI.Flash'],
+            'Paginator' => [
+                'className' => 'BootstrapUI.Paginator',
+                'labels' => [
+                    'prev' => '<i class="fa fa-chevron-left"></i>',
+                    'next' => '<i class="fa fa-chevron-right"></i>',
+                ]
+            ]
+        ]);
     }
 }

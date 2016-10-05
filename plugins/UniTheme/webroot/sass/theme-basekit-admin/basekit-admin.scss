@@ -1,0 +1,43 @@
+
+// Prepend Bootstrap
+	$icon-font-path: "../../fonts/bootstrap/"; 
+	@import "../bootstrap/bootstrap";
+
+
+// BaseKit Admin Main Stylesheet 
+
+	@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+	@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+
+
+	// Bootstrap Variables, Mixins
+	@import "../bootstrap/bootstrap/variables";
+	@import "../bootstrap/bootstrap/mixins";
+
+	// INSPINIA Theme Elements
+	@import "colors";
+	@import "typography";
+	@import "navigation";
+	@import "top_navigation";
+	@import "buttons";
+	@import "badges_labels";
+	@import "elements";
+	@import "sidebar";
+	@import "base";
+	@import "pages";
+
+	// RTL Support
+	//@import "rtl";
+
+	// For demo only - config box style
+	@import "theme-config";
+
+	// INSPINIA Skins
+	@import "skins";
+
+	// Media query style
+	@import "media";
+
+	// Custom style
+	// Your custom style to override base style
+	@import "custom";

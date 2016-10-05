@@ -1,0 +1,125 @@
+
+body.fixed-sidebar {
+  
+  &.sidebar-reveal .sidebar-collapse,
+  &.sidebar-push .sidebar-collapse,
+    {
+    width:220px !important;
+  }
+  &.sidebar-push .sidebar-collapse {float:right;}
+}
+
+
+body.body-small {
+  &:not(.fixed-sidebar) {
+    .nav-header {
+      padding: 0;
+      .logo-element {display:block;}
+    }
+
+    .navbar-default .nav > li > a {
+      font-size:16px;
+    }
+
+    .profile-element,
+    .nav-label,
+    .navbar-default .nav li a span {
+      display: none;
+    }
+  }
+  &.fixed-sidebar {
+
+    #page-wrapper {
+      width:100%;
+      position:relative;
+      .overlay {position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index: 2040;
+        background:white;
+        visibility:hidden;opacity:0;transition:.3s;}
+    }
+    &.fixed-nav {
+      .overlay {top:-60px !important;}
+    }
+    
+    &.mini-navbar {
+      #page-wrapper .overlay {visibility:visible;opacity:0.8;}
+      overflow: visible;
+    }
+
+    .mini-navbar {
+      #page-wrapper {
+        margin: 0 0 0 220px;
+      }
+      .navbar-static-side {
+        width: 220px;
+      }
+    }
+  }
+  .navbar-static-side {
+    display: block;
+    width:0;
+    overflow: hidden;
+  }
+  &:not(.mini-navbar) {
+    .nav-second-level {display:none;}
+  }
+  &.mini-navbar {
+    .navbar-static-side {
+      display: block;
+      width:70px;
+      overflow: hidden;
+
+    }
+  }
+
+  &:not(.fixed-sidebar) {
+
+    &.sidebar-reveal .sidebar-collapse,
+    &.sidebar-push .sidebar-collapse
+      {
+      width:70px !important;
+    }
+    &.sidebar-push .sidebar-collapse {float:right;}
+  }
+}
+
+.navbar-static-top,
+.navbar-fixed-top {
+  min-height:61px;
+}
+
+@media (max-width: 768px) {
+  #page-wrapper {
+    position: inherit;
+    margin: 0 0 0 0;
+    min-height: 1000px;
+  }
+  .body-small .navbar-static-side {
+    z-index: 2001;
+    position: absolute;
+    width: 70px;
+  }
+  .fixed-sidebar.body-small .navbar-static-side {
+    display: block;
+    z-index: 2001;
+    position: fixed;
+    width: 0;
+  }
+  .fixed-sidebar.body-small.mini-navbar .navbar-static-side {
+    display: block;
+  }
+
+}
+
+body.body-small.fixed-nav.fixed-nav-basic {
+  &.mini-navbar .navbar-fixed-top {
+    left:70px;
+  }
+  &.fixed-sidebar.mini-navbar .navbar-fixed-top {
+    left:220px;
+  }
+}
