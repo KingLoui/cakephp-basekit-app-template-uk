@@ -1,4 +1,4 @@
-<?php $pageTitle = 'BaseKit:'; ?>
+<?php $pageTitle = 'Admin UkApp Template'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
