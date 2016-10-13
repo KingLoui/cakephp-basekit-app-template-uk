@@ -85,6 +85,7 @@
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRight">
+                <?= $this->Flash->render() ?>
                 <?= $this->fetch('content') ?>
             </div>
         </div>
